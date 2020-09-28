@@ -2,9 +2,24 @@
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
+    if (Model.Lang == null) Model.Lang = "en";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+    <div class="text-center">
+        @if (Model.Lang == "en")
+        {
+            <h1 class="display-4">Welcome</h1>
+            <p>It`s website about me. I am Alexander "snaulX" Gunger.</p>
+            <p><b>Age</b> - 15</p>
+        }
+        else if (Model.Lang == "ru")
+        {
+            <h1 class="display-4">Добро Пожаловать</h1>
+            <p>Это сайт обо мне. Я - Александр "snaulX" Гунгер</p>
+            <p><b>Возраст</b> - 15</p>
+        }
+        else
+        {
+            <h3>Language with name @Model.Lang not found</h3>
+        }
+    </div>

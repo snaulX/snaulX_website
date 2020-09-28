@@ -10,6 +10,11 @@ namespace snaulX.Pages
 {
     public class IndexModel : PageModel
     {
+        [BindProperty(SupportsGet = true)]
+        public string Lang { get; set; }
+
+        //public string ContentFileName { get; set; }
+
         private readonly ILogger<IndexModel> _logger;
 
         public IndexModel(ILogger<IndexModel> logger)
@@ -18,6 +23,11 @@ namespace snaulX.Pages
         }
 
         public void OnGet()
+        {
+
+        }
+
+        public void OnPost()
         {
 
         }

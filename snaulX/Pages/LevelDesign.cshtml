@@ -1,0 +1,31 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Level Design";
+    if (Model.Lang == null) Model.Lang = "en";
+}
+
+    <div class="text-center">
+        @if (Model.Lang == "en")
+        {
+            <h1 class="display-4">Level-design</h1>
+            <p class="container">
+                I do not work as an official level-designer, but I am lovingly engaged in creating
+                levels for CS:GO and Portal 2. At the moment, development is underway on my first
+                map for CS:GO - Construzione (de_construzione).
+            </p>
+        }
+        else if (Model.Lang == "ru")
+        {
+            <h1 class="display-4">Создание уровней</h1>
+            <p class="container">
+                Я не работаю оффициально разработчиком уровней, но любительски
+                занимаюсь созданием уровней для CS:GO и Portal 2. На данный момент ведётся разработка
+                над моей первой картой для CS:GO - Construzione (de_construzione).
+            </p>
+        }
+        else
+        {
+            <h3>Language with name @Model.Lang not found</h3>
+        }
+    </div>

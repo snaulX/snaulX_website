@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,7 +11,7 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">snaulX</a>
+                <a class="navbar-brand" href="/Index?lang=@Model.Lang">snaulX</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -19,20 +19,20 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                            <a class="nav-link text-dark" href="/Index?lang=@Model.Lang">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/LevelDesign">Level-Design</a>
+                            <a class="nav-link text-dark" href="/LevelDesign?lang=@Model.Lang">Level-Design</a>
                         </li>
                     </ul>
-                </div>
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Choose Language
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                        <a class="dropdown-item" href="?lang=ru">Russian</a>
-                        <a class="dropdown-item" href="?lang=en">English</a>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Choose Language
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <a class="dropdown-item" href="?lang=ru">Russian</a>
+                            <a class="dropdown-item" href="?lang=en">English</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -45,6 +45,20 @@
     </div>
 
     <footer class="border-top footer text-muted">
+        <div class="container">
+            <a href="https://vk.com/snaulX">
+                <img class="icon" src="https://unpkg.com/simple-icons@v3/icons/vk.svg" />
+            </a>
+            <a href="https://github.com/snaulX">
+                <img class="icon" src="https://unpkg.com/simple-icons@v3/icons/github.svg" />
+            </a>
+            <a href="https://steamcommunity.com/id/snaulX/">
+                <img class="icon" src="https://unpkg.com/simple-icons@v3/icons/steam.svg" />
+            </a>
+            <a href="https://instagram.com/_snaulx/">
+                <img class="icon" src="https://unpkg.com/simple-icons@v3/icons/instagram.svg" />
+            </a>
+        </div>
         <div class="container">
             &copy; 2020 - snaulX
         </div>

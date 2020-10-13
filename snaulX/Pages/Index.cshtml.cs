@@ -15,19 +15,12 @@ namespace snaulX.Pages
 
         //public string ContentFileName { get; set; }
 
-        private readonly ILogger<IndexModel> _logger;
-
-        public IndexModel(ILogger<IndexModel> logger)
-        {
-            _logger = logger;
-        }
-
-        public void OnGet()
+        public virtual void OnGet()
         {
 
         }
 
-        public void OnPost()
+        public virtual void OnPost()
         {
 
         }

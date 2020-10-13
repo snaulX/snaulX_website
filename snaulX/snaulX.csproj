@@ -5,7 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\content\" />
+    <Compile Remove="wwwroot\content\**" />
+    <Content Remove="wwwroot\content\**" />
+    <EmbeddedResource Remove="wwwroot\content\**" />
+    <None Remove="wwwroot\content\**" />
   </ItemGroup>
 
 </Project>

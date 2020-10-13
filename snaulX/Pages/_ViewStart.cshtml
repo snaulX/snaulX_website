@@ -1,4 +1,7 @@
-﻿@{
-    if (Model is IndexModel)
+﻿@using snaulX.Pages.maps.construzione
+@{
+    if (Model is ConstruzioneModel)
+        Layout = "_Construzione";
+    else
         Layout = "_Layout";
 }

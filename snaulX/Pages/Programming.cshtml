@@ -2,31 +2,14 @@
 @model IndexModel
 @{
     ViewData["Title"] = "Programming";
-    if (Model.Lang == null) Model.Lang = "en";
 }
 
 <div class="text-center">
-    @if (Model.Lang == "en")
-    {
-        <h1 class="display-4">Programming</h1>
-        <p class="container">
-            My main job and hobby is programming. I have some old personal projects frozen (development was
-            in progress but stopped hoping to resume). But at the moment I am developing my own programming
-            language Mino, and also working as a programmer in the SCP: Deleted Chronicles project.
-        </p>
-    }
-    else if (Model.Lang == "ru")
-    {
-        <h1 class="display-4">Программирование</h1>
-        <p class="container">
-            Моя главная работа и хобби - это программирование. У меня есть несколько старых личных проектов,
-            замороженных (велась разработка, но остановилась с надеждой на возобновление). Но на данный момент
-            я занимаюсь разработкой собственного языка программирования Mino, а также работаю программистом 
-            в проекте SCP: Deleted Chronicles.
-        </p>
-    }
-    else
-    {
-        <h3>Language with name @Model.Lang not found</h3>
-    }
+    <h1 class="display-4">Programming</h1>
+    <p class="container">
+        My main job and hobby is programming. I have some old personal projects frozen (development was
+        in progress but stopped hoping to resume). But at the moment I am developing my own programming
+        language Mino, and also working as a programmer in the <a href="https://fbay.space" target="_blank">
+        SCP: Deleted Chronicles</a> project.
+    </p>
 </div>

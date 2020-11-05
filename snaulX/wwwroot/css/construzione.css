@@ -1,6 +1,9 @@
-﻿#bg {
+﻿body {
     height: 100%;
     width: 100%;
-    background: url(/img/construzione/screenshots_beta/banana.jpg) 100% 100% no-repeat;
+    background-image: url(/img/construzione/screenshots_beta/banana.jpg);
+    background-position: 0px 0px;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
